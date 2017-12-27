@@ -1,0 +1,118 @@
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+body {
+    background-color: #93c47d;
+}
+p {
+	text-align: center;
+}
+h3 {
+	position: relative;
+	left: 64px;
+}
+.center {
+    margin: auto;
+}
+.box {
+	position: relative;
+	width: 1000px;
+}
+.leftbox {
+	position: absolute;
+	left: 0;
+	width: 300px;
+}
+.middlebox {
+	position: absolute;
+	left: 300px;
+	width: 300px;
+}
+.rightbox {
+	position: absolute;
+	right: 0;
+	width: 400px;
+}
+.control {
+	margin: 25px;
+	margin-left: 30px;
+}
+
+.chkboxes {
+	position: relative;
+	left: 40px;
+	font-size: 1em;
+}
+.sp-replacer {
+	position: relative;
+	left: 40px;
+}
+.sp-preview {
+    position:relative;
+    width: 100px !important;
+}
+select {
+	width: 66%;
+	float: left;
+}
+label {
+	clear: right;
+}
+#btnRandom, #btnAuto {
+	margin: 12px;
+	margin-bottom: 0;
+	margin-left: 50px;
+	width: 148px;
+}
+.ui-button,  .ui-button-text .ui-button{  
+	font-size: 15px;
+}
+#brightness, #speed {
+	width: 66%;
+	margin-top: 1%;
+}
+.ui-slider .ui-slider-handle {
+	cursor: default;
+	position: absolute;
+	height: 1em;
+	width: 1em;
+	z-index: 2;
+}
+.ui-slider-horizontal {
+	height: 0.6em;
+}
+#paperCanvas {
+    width:100%;
+}
+
+#red .ui-slider-range { background: #ef2929; }
+#red .ui-slider-handle { border-color: #ef2929; }
