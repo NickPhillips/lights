@@ -45,8 +45,17 @@ The Illuminator Configurator
   <div class="control">
     <label for="effect">Effects</label>
 	<select name="effect" id="effect">
-		<option value="0">Stripes</option>
-		<option value="1">Solid colors</option>
+		<option value="0">Solid colors</option>
+		<option value="1">Sweeping colors</option>
+		<option value="2">Narrow bands</option>
+		<option value="3">Medium bands</option>
+		<option value="4">Wide bands</option>
+    </select>
+  </div>
+  <div class="control">
+    <label for="gPalette">Gradient Palette</label>
+	<select name="gPalette" id="gPalette">
+		<option value="255">None</option>
     </select>
   </div>
 </div>
@@ -62,6 +71,7 @@ The Illuminator Configurator
 	<input type="checkbox" name="chkbox[]" class="chkboxes" value="8"/> <input type='text' id="c8" class="picker"/><br>
 	<button id="btnRandom">Random Colors</button><br>
 	<button id="btnAuto">Auto-Blend</button>
+	<div name="gBox" class="gradient"> </div>
 </div>
 <div class="col span_1_of_3">
 	<canvas id="paperCanvas" resize />
