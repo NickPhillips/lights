@@ -6,6 +6,7 @@ var simTime = 0;
 var simDelay = 0.25;
 var simBlend = 0;
 var simEffect = 0;
+var currentGrad = "None";
 
 function sendSettings()
 {
@@ -229,8 +230,7 @@ function sendEffect(effect)
 	simEffect = settings.ef;
 	
 	//Testing gradient preview code
-	var currentGrad = "None";
-	var newGrad = "None";
+	var newGrad;
 	if (effect == "1")
 	{
 		newGrad = "gradTest";
