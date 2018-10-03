@@ -114,5 +114,24 @@ label {
     width:100%;
 }
 
-#red .ui-slider-range { background: #ef2929; }
-#red .ui-slider-handle { border-color: #ef2929; }
+.gradient {
+    width:500px;
+    height:50px;
+    display:block;
+}
+.gradTest {
+    background-image:linear-gradient(to right, #FFFF28 0%, #FF0000 50%, #FF4CFF 100%);
+}
+.bhw128 {
+    background-image:linear-gradient(
+	0deg,
+	rgb(160, 19,241)   0.000%,
+	rgb(254,145,255)  12.010%,
+	rgb(218,  0,250)  18.990%,
+	rgb(  0,200,250)  47.000%,
+	rgb(129,  0,250)  66.990%,
+	rgb(254,145,255)  81.010%,
+	rgb(162, 64,238)  90.990%,
+	rgb(  0,200,250) 100.000%
+	);
+}
