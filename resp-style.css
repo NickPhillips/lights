@@ -115,9 +115,9 @@ label {
 }
 
 .gradient {
-    width:200px;
-    height:50px;
-    display:block;
+    width: 70%;
+    height: 50px;
+    display: block;
 }
 .gradTest {
     background-image:linear-gradient(to right, #FFFF28 0%, #FF0000 50%, #FF4CFF 100%);
