@@ -227,6 +227,12 @@ function sendEffect(effect)
     });
 	
 	simEffect = settings.ef;
+	
+	//Testing gradient preview code
+	if (effect == "1")
+		$("#gBox").addClass('gradTest');
+	if (effect == "2")
+		$("#gBox").removeClass('gradTest').addClass('bhw128');
 }
 function sendColor(obj)
 {
