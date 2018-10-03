@@ -229,10 +229,20 @@ function sendEffect(effect)
 	simEffect = settings.ef;
 	
 	//Testing gradient preview code
+	var currentGrad = "None";
+	var newGrad = "None";
 	if (effect == "1")
-		$("#gBox").addClass('gradTest');
+	{
+		newGrad = "gradTest";
+		$("#gBox").removeClass(currentGrad).addClass(newGrad);
+		currentGrad = "gradTest";
+	}
 	if (effect == "2")
-		$("#gBox").removeClass('gradTest').addClass('bhw128');
+	{
+		newGrad = "bhw128";
+		$("#gBox").removeClass(currentGrad).addClass(newGrad);
+		currentGrad = "bhw128";
+	}
 }
 function sendColor(obj)
 {
