@@ -75,7 +75,7 @@ h3 {
 .sp-replacer {
 	position: relative;
 	left: 40px;
-	margin-right: 100px;
+	margin-right: 10px;
 }
 .sp-preview {
     position:relative;
@@ -83,6 +83,7 @@ h3 {
 }
 #g1, #g2, #g3, #g4, #g5, #g6, #g7, #g8 {
 	width: 40px;
+	padding-left: 5px;
 }
 select {
 	width: 66%;
